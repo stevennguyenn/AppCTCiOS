@@ -126,6 +126,8 @@ extension MainViewController: UITableViewDelegate{
         switch indexPath.row {
         case 1:
             presenter?.openProfile()
+        case 2:
+            presenter?.openTest()
         default:
             print("default")
         }

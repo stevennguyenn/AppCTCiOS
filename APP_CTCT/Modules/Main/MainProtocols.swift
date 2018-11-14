@@ -13,12 +13,14 @@ import Foundation
 //MARK: Wireframe -
 protocol MainWireframeProtocol: class {
     func openProfile()
+    func openTest()
 }
 //MARK: Presenter -
 protocol MainPresenterProtocol: class {
 
     var interactor: MainInteractorInputProtocol? { get set }
     func openProfile()
+    func openTest()
 }
 
 //MARK: Interactor -

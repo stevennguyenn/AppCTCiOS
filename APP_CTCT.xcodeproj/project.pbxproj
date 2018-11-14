@@ -8,13 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		763164872194271B00957B56 /* ExtensionWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763164862194271B00957B56 /* ExtensionWebView.swift */; };
-		7643E5ED2193D23200487579 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643E5EC2193D23200487579 /* Car.swift */; };
-		7643E5EF2193D28E00487579 /* CarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643E5EE2193D28E00487579 /* CarViewModel.swift */; };
-		7643E5F22193D3D700487579 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643E5F02193D3D700487579 /* CarViewController.swift */; };
-		7643E5F32193D3D700487579 /* CarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7643E5F12193D3D700487579 /* CarViewController.xib */; };
-		7643E5F52193D44600487579 /* DataCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643E5F42193D44600487579 /* DataCar.swift */; };
-		7643E5F82193D59100487579 /* CarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643E5F62193D59100487579 /* CarCell.swift */; };
-		7643E5F92193D59100487579 /* CarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7643E5F72193D59100487579 /* CarCell.xib */; };
 		7643E5FB2193D73D00487579 /* ExtensionImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643E5FA2193D73D00487579 /* ExtensionImageView.swift */; };
 		767FEBC32192E093006A1D60 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEBC22192E093006A1D60 /* Menu.swift */; };
 		767FEBC52192E0E9006A1D60 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEBC42192E0E9006A1D60 /* Data.swift */; };
@@ -83,13 +76,6 @@
 
 /* Begin PBXFileReference section */
 		763164862194271B00957B56 /* ExtensionWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionWebView.swift; sourceTree = "<group>"; };
-		7643E5EC2193D23200487579 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
-		7643E5EE2193D28E00487579 /* CarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewModel.swift; sourceTree = "<group>"; };
-		7643E5F02193D3D700487579 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
-		7643E5F12193D3D700487579 /* CarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarViewController.xib; sourceTree = "<group>"; };
-		7643E5F42193D44600487579 /* DataCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCar.swift; sourceTree = "<group>"; };
-		7643E5F62193D59100487579 /* CarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCell.swift; sourceTree = "<group>"; };
-		7643E5F72193D59100487579 /* CarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCell.xib; sourceTree = "<group>"; };
 		7643E5FA2193D73D00487579 /* ExtensionImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionImageView.swift; sourceTree = "<group>"; };
 		767FEBC22192E093006A1D60 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		767FEBC42192E0E9006A1D60 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -180,20 +166,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7643E5EB2193D22200487579 /* Car */ = {
-			isa = PBXGroup;
-			children = (
-				7643E5EC2193D23200487579 /* Car.swift */,
-				7643E5EE2193D28E00487579 /* CarViewModel.swift */,
-				7643E5F02193D3D700487579 /* CarViewController.swift */,
-				7643E5F12193D3D700487579 /* CarViewController.xib */,
-				7643E5F42193D44600487579 /* DataCar.swift */,
-				7643E5F62193D59100487579 /* CarCell.swift */,
-				7643E5F72193D59100487579 /* CarCell.xib */,
-			);
-			path = Car;
-			sourceTree = "<group>";
-		};
 		7643E5FE2193E3A200487579 /* ReadPDF */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,7 +232,6 @@
 			children = (
 				76BDBBCF2194414500F4364F /* Test */,
 				7643E5FE2193E3A200487579 /* ReadPDF */,
-				7643E5EB2193D22200487579 /* Car */,
 				767FEBCC2192F5C4006A1D60 /* Profile */,
 				76A140752192CBD800343521 /* Main */,
 				76A140462192BCA200343521 /* Register */,
@@ -483,10 +454,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				76A140862192CC3800343521 /* CellMain.xib in Resources */,
-				7643E5F32193D3D700487579 /* CarViewController.xib in Resources */,
 				76A140692192BCA200343521 /* LoginViewController.xib in Resources */,
 				767FEBD82192F5D6006A1D60 /* ProfileViewController.xib in Resources */,
-				7643E5F92193D59100487579 /* CarCell.xib in Resources */,
 				76A1403E2192BBF500343521 /* LaunchScreen.storyboard in Resources */,
 				76A140812192CBEF00343521 /* MainViewController.xib in Resources */,
 				767FEBC92192EF53006A1D60 /* CellHeader.xib in Resources */,
@@ -562,7 +531,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7643E5F82193D59100487579 /* CarCell.swift in Sources */,
 				76A1406E2192BCA200343521 /* ExtensionView.swift in Sources */,
 				76A1407E2192CBEF00343521 /* MainViewController.swift in Sources */,
 				767FEBD72192F5D6006A1D60 /* ProfileInteractor.swift in Sources */,
@@ -572,7 +540,6 @@
 				76BDBBCC2194304000F4364F /* ViewIndicator.swift in Sources */,
 				767FEBD62192F5D6006A1D60 /* ProfileProtocols.swift in Sources */,
 				76A1406A2192BCA200343521 /* LoginViewController.swift in Sources */,
-				7643E5EF2193D28E00487579 /* CarViewModel.swift in Sources */,
 				76FB2F5C219BBD1000F235B2 /* ProcessRadio.swift in Sources */,
 				767FEBC82192EF53006A1D60 /* CellHeader.swift in Sources */,
 				76FB2F61219BC52800F235B2 /* CellTestQuestion.swift in Sources */,
@@ -586,8 +553,6 @@
 				76BDBBD82194417400F4364F /* TestViewController.swift in Sources */,
 				76BDBBC921942E2F00F4364F /* PDFInteractor.swift in Sources */,
 				76BDBBC821942E2F00F4364F /* PDFProtocols.swift in Sources */,
-				7643E5ED2193D23200487579 /* Car.swift in Sources */,
-				7643E5F52193D44600487579 /* DataCar.swift in Sources */,
 				767FEBD32192F5D6006A1D60 /* ProfilePresenter.swift in Sources */,
 				76BDBBE22194425800F4364F /* RatioCTCT.swift in Sources */,
 				76A140742192BCA200343521 /* CameraHandler.swift in Sources */,
@@ -617,7 +582,6 @@
 				76FB2F5E219BBFA000F235B2 /* QuestionText.swift in Sources */,
 				76A140312192BBF400343521 /* AppDelegate.swift in Sources */,
 				76BDBBDA2194417400F4364F /* TestInteractor.swift in Sources */,
-				7643E5F22193D3D700487579 /* CarViewController.swift in Sources */,
 				767FEBC52192E0E9006A1D60 /* Data.swift in Sources */,
 				76A140802192CBEF00343521 /* MainInteractor.swift in Sources */,
 			);

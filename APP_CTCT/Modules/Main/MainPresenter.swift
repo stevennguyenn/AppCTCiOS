@@ -25,5 +25,8 @@ class MainPresenter: MainPresenterProtocol, MainInteractorOutputProtocol {
     func openProfile() {
         router.openProfile()
     }
-
+    
+    func openTest() {
+        router.openTest()
+    }
 }
