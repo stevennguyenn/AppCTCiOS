@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class CustomTextField: UIView{
+class CustomTextFieldIcon: UIView{
     var textField : UITextField = {
         let tf = UITextField()
         tf.translatesAutoresizingMaskIntoConstraints = false

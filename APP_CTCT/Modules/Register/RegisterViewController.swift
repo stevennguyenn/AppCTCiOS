@@ -15,9 +15,9 @@ class RegisterViewController: UIViewController, RegisterViewProtocol {
 	var presenter: RegisterPresenterProtocol?
 
     @IBOutlet weak var btRegister: CustomButton!
-    @IBOutlet weak var tfConfirmPassword: CustomTextField!
-    @IBOutlet weak var tfPassword: CustomTextField!
-    @IBOutlet weak var tfUserName: CustomTextField!
+    @IBOutlet weak var tfConfirmPassword: CustomTextFieldIcon!
+    @IBOutlet weak var tfPassword: CustomTextFieldIcon!
+    @IBOutlet weak var tfUserName: CustomTextFieldIcon!
     @IBOutlet weak var btCollectionImage: UIImageView!
     @IBOutlet weak var btCamera: UIImageView!
     @IBOutlet weak var imgAvatar: UIImageView!

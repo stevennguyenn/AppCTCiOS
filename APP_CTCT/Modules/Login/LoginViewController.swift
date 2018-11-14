@@ -19,8 +19,8 @@ class LoginViewController: UIViewController, LoginViewProtocol {
     @IBOutlet weak var btRegister: UIButton!
     @IBOutlet weak var btLoginFacabook: FBSDKLoginButton!
     @IBOutlet weak var btLogin: CustomButton!
-    @IBOutlet weak var tfPassword: CustomTextField!
-    @IBOutlet weak var tfEmail: CustomTextField!
+    @IBOutlet weak var tfPassword: CustomTextFieldIcon!
+    @IBOutlet weak var tfEmail: CustomTextFieldIcon!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760008B1219BEEBE004D9CE1 /* ViewTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760008B0219BEEBE004D9CE1 /* ViewTextField.swift */; };
+		760008B9219BF205004D9CE1 /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760008B3219BF205004D9CE1 /* SettingPresenter.swift */; };
+		760008BA219BF205004D9CE1 /* SettingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760008B4219BF205004D9CE1 /* SettingRouter.swift */; };
+		760008BB219BF205004D9CE1 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760008B5219BF205004D9CE1 /* SettingViewController.swift */; };
+		760008BC219BF205004D9CE1 /* SettingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760008B6219BF205004D9CE1 /* SettingProtocols.swift */; };
+		760008BD219BF205004D9CE1 /* SettingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760008B7219BF205004D9CE1 /* SettingInteractor.swift */; };
+		760008BE219BF205004D9CE1 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760008B8219BF205004D9CE1 /* SettingViewController.xib */; };
 		763164872194271B00957B56 /* ExtensionWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763164862194271B00957B56 /* ExtensionWebView.swift */; };
 		7643E5FB2193D73D00487579 /* ExtensionImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643E5FA2193D73D00487579 /* ExtensionImageView.swift */; };
 		767FEBC32192E093006A1D60 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEBC22192E093006A1D60 /* Menu.swift */; };
@@ -41,7 +48,7 @@
 		76A140702192BCA200343521 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A140592192BCA200343521 /* Strings.swift */; };
 		76A140712192BCA200343521 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A1405A2192BCA200343521 /* Colors.swift */; };
 		76A140722192BCA200343521 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A1405C2192BCA200343521 /* CustomButton.swift */; };
-		76A140732192BCA200343521 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A1405D2192BCA200343521 /* CustomTextField.swift */; };
+		76A140732192BCA200343521 /* CustomTextFieldIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A1405D2192BCA200343521 /* CustomTextFieldIcon.swift */; };
 		76A140742192BCA200343521 /* CameraHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A140612192BCA200343521 /* CameraHandler.swift */; };
 		76A1407C2192CBEF00343521 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A140762192CBEF00343521 /* MainPresenter.swift */; };
 		76A1407D2192CBEF00343521 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A140772192CBEF00343521 /* MainRouter.swift */; };
@@ -75,6 +82,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		760008B0219BEEBE004D9CE1 /* ViewTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTextField.swift; sourceTree = "<group>"; };
+		760008B3219BF205004D9CE1 /* SettingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
+		760008B4219BF205004D9CE1 /* SettingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRouter.swift; sourceTree = "<group>"; };
+		760008B5219BF205004D9CE1 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		760008B6219BF205004D9CE1 /* SettingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProtocols.swift; sourceTree = "<group>"; };
+		760008B7219BF205004D9CE1 /* SettingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingInteractor.swift; sourceTree = "<group>"; };
+		760008B8219BF205004D9CE1 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		763164862194271B00957B56 /* ExtensionWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionWebView.swift; sourceTree = "<group>"; };
 		7643E5FA2193D73D00487579 /* ExtensionImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionImageView.swift; sourceTree = "<group>"; };
 		767FEBC22192E093006A1D60 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
@@ -111,7 +125,7 @@
 		76A140592192BCA200343521 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		76A1405A2192BCA200343521 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		76A1405C2192BCA200343521 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		76A1405D2192BCA200343521 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		76A1405D2192BCA200343521 /* CustomTextFieldIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldIcon.swift; sourceTree = "<group>"; };
 		76A140612192BCA200343521 /* CameraHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraHandler.swift; sourceTree = "<group>"; };
 		76A140762192CBEF00343521 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		76A140772192CBEF00343521 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
@@ -164,6 +178,19 @@
 				A9E51A76AD55BFA880FF9D50 /* Pods_APP_CTCT.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		760008B2219BF1F2004D9CE1 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				760008B3219BF205004D9CE1 /* SettingPresenter.swift */,
+				760008B4219BF205004D9CE1 /* SettingRouter.swift */,
+				760008B5219BF205004D9CE1 /* SettingViewController.swift */,
+				760008B6219BF205004D9CE1 /* SettingProtocols.swift */,
+				760008B7219BF205004D9CE1 /* SettingInteractor.swift */,
+				760008B8219BF205004D9CE1 /* SettingViewController.xib */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		7643E5FE2193E3A200487579 /* ReadPDF */ = {
@@ -230,6 +257,7 @@
 		76A140452192BCA200343521 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				760008B2219BF1F2004D9CE1 /* Setting */,
 				76BDBBCF2194414500F4364F /* Test */,
 				7643E5FE2193E3A200487579 /* ReadPDF */,
 				767FEBCC2192F5C4006A1D60 /* Profile */,
@@ -302,9 +330,10 @@
 			isa = PBXGroup;
 			children = (
 				76A1405C2192BCA200343521 /* CustomButton.swift */,
-				76A1405D2192BCA200343521 /* CustomTextField.swift */,
+				76A1405D2192BCA200343521 /* CustomTextFieldIcon.swift */,
 				76BDBBCB2194304000F4364F /* ViewIndicator.swift */,
 				76BDBBE12194425800F4364F /* RatioCTCT.swift */,
+				760008B0219BEEBE004D9CE1 /* ViewTextField.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -460,6 +489,7 @@
 				76A140812192CBEF00343521 /* MainViewController.xib in Resources */,
 				767FEBC92192EF53006A1D60 /* CellHeader.xib in Resources */,
 				76FB2F62219BC52800F235B2 /* CellTestQuestion.xib in Resources */,
+				760008BE219BF205004D9CE1 /* SettingViewController.xib in Resources */,
 				76A1403B2192BBF500343521 /* Assets.xcassets in Resources */,
 				76A140662192BCA200343521 /* RegisterViewController.xib in Resources */,
 				76BDBBDB2194417400F4364F /* TestViewController.xib in Resources */,
@@ -543,6 +573,7 @@
 				76FB2F5C219BBD1000F235B2 /* ProcessRadio.swift in Sources */,
 				767FEBC82192EF53006A1D60 /* CellHeader.swift in Sources */,
 				76FB2F61219BC52800F235B2 /* CellTestQuestion.swift in Sources */,
+				760008BC219BF205004D9CE1 /* SettingProtocols.swift in Sources */,
 				767FEBD52192F5D6006A1D60 /* ProfileViewController.swift in Sources */,
 				76BDBBC521942E2F00F4364F /* PDFPresenter.swift in Sources */,
 				76A140852192CC3800343521 /* CellMain.swift in Sources */,
@@ -551,6 +582,8 @@
 				76A1406D2192BCA200343521 /* LoginRouter.swift in Sources */,
 				7643E5FB2193D73D00487579 /* ExtensionImageView.swift in Sources */,
 				76BDBBD82194417400F4364F /* TestViewController.swift in Sources */,
+				760008B1219BEEBE004D9CE1 /* ViewTextField.swift in Sources */,
+				760008BD219BF205004D9CE1 /* SettingInteractor.swift in Sources */,
 				76BDBBC921942E2F00F4364F /* PDFInteractor.swift in Sources */,
 				76BDBBC821942E2F00F4364F /* PDFProtocols.swift in Sources */,
 				767FEBD32192F5D6006A1D60 /* ProfilePresenter.swift in Sources */,
@@ -561,10 +594,11 @@
 				76BDBBC721942E2F00F4364F /* PDFViewController.swift in Sources */,
 				76A1407D2192CBEF00343521 /* MainRouter.swift in Sources */,
 				76A140702192BCA200343521 /* Strings.swift in Sources */,
-				76A140732192BCA200343521 /* CustomTextField.swift in Sources */,
+				76A140732192BCA200343521 /* CustomTextFieldIcon.swift in Sources */,
 				76A1406C2192BCA200343521 /* LoginPresenter.swift in Sources */,
 				76A140712192BCA200343521 /* Colors.swift in Sources */,
 				767FEBCB2192F08D006A1D60 /* Header.swift in Sources */,
+				760008BB219BF205004D9CE1 /* SettingViewController.swift in Sources */,
 				76A140672192BCA200343521 /* RegisterViewController.swift in Sources */,
 				76A140632192BCA200343521 /* RegisterRouter.swift in Sources */,
 				763164872194271B00957B56 /* ExtensionWebView.swift in Sources */,
@@ -575,11 +609,13 @@
 				76BDBBD62194417400F4364F /* TestPresenter.swift in Sources */,
 				76A1407C2192CBEF00343521 /* MainPresenter.swift in Sources */,
 				76A140722192BCA200343521 /* CustomButton.swift in Sources */,
+				760008BA219BF205004D9CE1 /* SettingRouter.swift in Sources */,
 				76A140652192BCA200343521 /* RegisterInteractor.swift in Sources */,
 				767FEBC32192E093006A1D60 /* Menu.swift in Sources */,
 				76A140622192BCA200343521 /* RegisterPresenter.swift in Sources */,
 				76BDBBCE21943A9B00F4364F /* ExtensionUIColor.swift in Sources */,
 				76FB2F5E219BBFA000F235B2 /* QuestionText.swift in Sources */,
+				760008B9219BF205004D9CE1 /* SettingPresenter.swift in Sources */,
 				76A140312192BBF400343521 /* AppDelegate.swift in Sources */,
 				76BDBBDA2194417400F4364F /* TestInteractor.swift in Sources */,
 				767FEBC52192E0E9006A1D60 /* Data.swift in Sources */,

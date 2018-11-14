@@ -39,6 +39,7 @@ extension UIView{
             self.clipsToBounds = true
         }
     }
+    
     func centerView(centerX: NSLayoutXAxisAnchor, centerY: NSLayoutYAxisAnchor){
         self.centerXAnchor.constraint(equalTo: centerX).isActive = true
         self.centerYAnchor.constraint(equalTo: centerY).isActive = true
@@ -54,5 +55,25 @@ extension UIView{
         self.heightAnchor.constraint(equalToConstant: height).isActive = true
         self.centerXAnchor.constraint(equalTo: centerX).isActive = true
         self.centerYAnchor.constraint(equalTo: centerY).isActive = true
+    }
+    
+    func setTopLeadingViewLabel(top: NSLayoutYAxisAnchor, leading: NSLayoutXAxisAnchor){
+        self.topAnchor.constraint(equalTo: top, constant: 5).isActive = true
+        self.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5).isActive = true
+    }
+    
+    
+    func fullTopLeftRightBottom_WithConstant5dp(topAnchor: NSLayoutYAxisAnchor, leadingAnchor: NSLayoutXAxisAnchor, bottomAnchor: NSLayoutYAxisAnchor, trailingAnchor: NSLayoutXAxisAnchor){
+        self.topAnchor.constraint(equalTo: topAnchor, constant: 5).isActive = true
+        self.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5).isActive = true
+        self.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 5).isActive = true
+        self.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -5).isActive = true
+    }
+    
+    func fullTopLeftRightBottomWidthLeading10dp(topAnchor: NSLayoutYAxisAnchor, leadingAnchor: NSLayoutXAxisAnchor, bottomAnchor: NSLayoutYAxisAnchor, trailingAnchor: NSLayoutXAxisAnchor){
+        self.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        self.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10).isActive = true
+        self.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        self.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
     }
 }
