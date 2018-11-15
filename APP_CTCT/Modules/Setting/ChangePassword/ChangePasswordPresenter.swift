@@ -11,7 +11,7 @@
 import UIKit
 
 class ChangePasswordPresenter: ChangePasswordPresenterProtocol, ChangePasswordInteractorOutputProtocol {
- 
+
     weak private var view: ChangePasswordViewProtocol?
     var interactor: ChangePasswordInteractorInputProtocol?
     private let router: ChangePasswordWireframeProtocol
@@ -52,5 +52,8 @@ class ChangePasswordPresenter: ChangePasswordPresenterProtocol, ChangePasswordIn
     
     func notifyInterator(currentPass: String?, newPass: String?, confirmPass: String?) {
         interactor?.notifyInterator(currentPass: currentPass, newPass: newPass, confirmPass: confirmPass)
+    }
+    func backRoot() {
+        router.backRoot()
     }
 }

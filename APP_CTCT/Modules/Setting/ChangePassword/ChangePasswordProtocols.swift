@@ -12,13 +12,14 @@ import Foundation
 
 //MARK: Wireframe -
 protocol ChangePasswordWireframeProtocol: class {
-
+    func backRoot()
 }
 //MARK: Presenter -
 protocol ChangePasswordPresenterProtocol: class {
 
     var interactor: ChangePasswordInteractorInputProtocol? { get set }
     func notifyInterator(currentPass: String?,newPass: String?,confirmPass: String?)
+    func backRoot()
 }
 
 //MARK: Interactor -

@@ -21,6 +21,7 @@ class ChangePasswordInteractor: ChangePasswordInteractorInputProtocol {
         
         guard let confirm = confirmPass else { return }
         
+        
         if current == ""{
             presenter?.currentPassEmpty()
             return

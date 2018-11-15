@@ -61,11 +61,17 @@ extension ChangePasswordViewController: ChangePasswordViewProtocol{
     }
     
     func successed() {
-        
+        let vc = ChangeSuccessedViewController()
+        vc.delegate = self
+        self.present(vc,animated: true)
     }
     
     func failedNetwork() {
         
     }
-    
+}
+extension ChangePasswordViewController: ProcessBackRootViewController{
+    func backRoot() {
+        presenter?.backRoot()
+    }
 }

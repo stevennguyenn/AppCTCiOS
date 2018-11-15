@@ -27,4 +27,8 @@ class ChangePasswordRouter: ChangePasswordWireframeProtocol {
 
         return view
     }
+    
+    func backRoot() {
+        viewController?.navigationController?.popToRootViewController(animated: true)
+    }
 }
