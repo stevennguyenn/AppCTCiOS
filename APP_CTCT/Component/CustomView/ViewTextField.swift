@@ -88,6 +88,10 @@ class ViewTextField: UIView{
         return nil
     }
     
+    func setViewPassword(){
+        textfield.isSecureTextEntry = true
+    }
+    
     func setErrorView(error: String){
         labelError.text = error
         labelError.isHidden = false

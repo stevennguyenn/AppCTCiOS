@@ -34,21 +34,25 @@ class ChangePasswordViewController: UIViewController {
 }
 extension ChangePasswordViewController: ProcessButton{
     func process() {
+        ViewIndicator.shared.showProgressView()
         presenter?.notifyInterator(currentPass: currentPass.getTextTextField(), newPass: newPass.getTextTextField(), confirmPass: confirmPass.getTextTextField())
     }
 }
 
 extension ChangePasswordViewController: ChangePasswordViewProtocol{
     func currentPassEmpty() {
+        ViewIndicator.shared.hideProgressView()
         currentPass.setErrorView(error: "Current Password is empty")
     }
     
     func newPassEmpty() {
+        ViewIndicator.shared.hideProgressView()
         newPass.setErrorView(error: "New Password is empty")
     }
     
     
     func confirmPassEmpty() {
+        ViewIndicator.shared.hideProgressView()
         confirmPass.setErrorView(error: "Confirm Password is empty")
     }
     

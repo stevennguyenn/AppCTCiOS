@@ -20,6 +20,12 @@
 		7676DEEE219D5DDB00783DA3 /* ChangeSuccessedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7676DEEC219D5DDB00783DA3 /* ChangeSuccessedViewController.xib */; };
 		7676DEF1219D5EF100783DA3 /* ChangeFailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676DEEF219D5EF100783DA3 /* ChangeFailedViewController.swift */; };
 		7676DEF2219D5EF100783DA3 /* ChangeFailedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7676DEF0219D5EF100783DA3 /* ChangeFailedViewController.xib */; };
+		7676DEFB219D7AA800783DA3 /* MemberCTCTPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676DEF5219D7AA800783DA3 /* MemberCTCTPresenter.swift */; };
+		7676DEFC219D7AA800783DA3 /* MemberCTCTRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676DEF6219D7AA800783DA3 /* MemberCTCTRouter.swift */; };
+		7676DEFD219D7AA800783DA3 /* MemberCTCTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676DEF7219D7AA800783DA3 /* MemberCTCTViewController.swift */; };
+		7676DEFE219D7AA800783DA3 /* MemberCTCTProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676DEF8219D7AA800783DA3 /* MemberCTCTProtocols.swift */; };
+		7676DEFF219D7AA800783DA3 /* MemberCTCTInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676DEF9219D7AA800783DA3 /* MemberCTCTInteractor.swift */; };
+		7676DF00219D7AA800783DA3 /* MemberCTCTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7676DEFA219D7AA800783DA3 /* MemberCTCTViewController.xib */; };
 		767FEBC32192E093006A1D60 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEBC22192E093006A1D60 /* Menu.swift */; };
 		767FEBC52192E0E9006A1D60 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEBC42192E0E9006A1D60 /* Data.swift */; };
 		767FEBC82192EF53006A1D60 /* CellHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767FEBC62192EF53006A1D60 /* CellHeader.swift */; };
@@ -105,6 +111,12 @@
 		7676DEEC219D5DDB00783DA3 /* ChangeSuccessedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeSuccessedViewController.xib; sourceTree = "<group>"; };
 		7676DEEF219D5EF100783DA3 /* ChangeFailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeFailedViewController.swift; sourceTree = "<group>"; };
 		7676DEF0219D5EF100783DA3 /* ChangeFailedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeFailedViewController.xib; sourceTree = "<group>"; };
+		7676DEF5219D7AA800783DA3 /* MemberCTCTPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCTCTPresenter.swift; sourceTree = "<group>"; };
+		7676DEF6219D7AA800783DA3 /* MemberCTCTRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCTCTRouter.swift; sourceTree = "<group>"; };
+		7676DEF7219D7AA800783DA3 /* MemberCTCTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCTCTViewController.swift; sourceTree = "<group>"; };
+		7676DEF8219D7AA800783DA3 /* MemberCTCTProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCTCTProtocols.swift; sourceTree = "<group>"; };
+		7676DEF9219D7AA800783DA3 /* MemberCTCTInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCTCTInteractor.swift; sourceTree = "<group>"; };
+		7676DEFA219D7AA800783DA3 /* MemberCTCTViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberCTCTViewController.xib; sourceTree = "<group>"; };
 		767FEBC22192E093006A1D60 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		767FEBC42192E0E9006A1D60 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		767FEBC62192EF53006A1D60 /* CellHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellHeader.swift; sourceTree = "<group>"; };
@@ -245,9 +257,23 @@
 			path = Failed;
 			sourceTree = "<group>";
 		};
+		7676DEF4219D7A9300783DA3 /* MemberCTCT */ = {
+			isa = PBXGroup;
+			children = (
+				7676DEF5219D7AA800783DA3 /* MemberCTCTPresenter.swift */,
+				7676DEF6219D7AA800783DA3 /* MemberCTCTRouter.swift */,
+				7676DEF7219D7AA800783DA3 /* MemberCTCTViewController.swift */,
+				7676DEF8219D7AA800783DA3 /* MemberCTCTProtocols.swift */,
+				7676DEF9219D7AA800783DA3 /* MemberCTCTInteractor.swift */,
+				7676DEFA219D7AA800783DA3 /* MemberCTCTViewController.xib */,
+			);
+			path = MemberCTCT;
+			sourceTree = "<group>";
+		};
 		767FEBCC2192F5C4006A1D60 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				7676DEF4219D7A9300783DA3 /* MemberCTCT */,
 				767FEBCD2192F5D6006A1D60 /* ProfilePresenter.swift */,
 				767FEBCE2192F5D6006A1D60 /* ProfileRouter.swift */,
 				767FEBCF2192F5D6006A1D60 /* ProfileViewController.swift */,
@@ -538,6 +564,7 @@
 			files = (
 				76A140862192CC3800343521 /* CellMain.xib in Resources */,
 				76CD2664219D02BD006D18AB /* ChangePasswordViewController.xib in Resources */,
+				7676DF00219D7AA800783DA3 /* MemberCTCTViewController.xib in Resources */,
 				76A140692192BCA200343521 /* LoginViewController.xib in Resources */,
 				767FEBD82192F5D6006A1D60 /* ProfileViewController.xib in Resources */,
 				76A1403E2192BBF500343521 /* LaunchScreen.storyboard in Resources */,
@@ -619,6 +646,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76A1406E2192BCA200343521 /* ExtensionView.swift in Sources */,
+				7676DEFF219D7AA800783DA3 /* MemberCTCTInteractor.swift in Sources */,
 				76A1407E2192CBEF00343521 /* MainViewController.swift in Sources */,
 				767FEBD72192F5D6006A1D60 /* ProfileInteractor.swift in Sources */,
 				76A1406F2192BCA200343521 /* ExtensionTextField.swift in Sources */,
@@ -637,7 +665,9 @@
 				76A140852192CC3800343521 /* CellMain.swift in Sources */,
 				76BDBBC621942E2F00F4364F /* PDFRouter.swift in Sources */,
 				76A1406B2192BCA200343521 /* LoginProtocols.swift in Sources */,
+				7676DEFB219D7AA800783DA3 /* MemberCTCTPresenter.swift in Sources */,
 				76A1406D2192BCA200343521 /* LoginRouter.swift in Sources */,
+				7676DEFE219D7AA800783DA3 /* MemberCTCTProtocols.swift in Sources */,
 				7643E5FB2193D73D00487579 /* ExtensionImageView.swift in Sources */,
 				76BDBBD82194417400F4364F /* TestViewController.swift in Sources */,
 				76CD265F219D02BD006D18AB /* ChangePasswordPresenter.swift in Sources */,
@@ -661,6 +691,7 @@
 				76A140672192BCA200343521 /* RegisterViewController.swift in Sources */,
 				76A140632192BCA200343521 /* RegisterRouter.swift in Sources */,
 				763164872194271B00957B56 /* ExtensionWebView.swift in Sources */,
+				7676DEFC219D7AA800783DA3 /* MemberCTCTRouter.swift in Sources */,
 				76FB2F64219BCF4700F235B2 /* ResultText.swift in Sources */,
 				76CD2661219D02BD006D18AB /* ChangePasswordViewController.swift in Sources */,
 				76CD2663219D02BD006D18AB /* ChangePasswordInteractor.swift in Sources */,
@@ -671,6 +702,7 @@
 				76A1407C2192CBEF00343521 /* MainPresenter.swift in Sources */,
 				76A140722192BCA200343521 /* CustomButton.swift in Sources */,
 				7676DEED219D5DDB00783DA3 /* ChangeSuccessedViewController.swift in Sources */,
+				7676DEFD219D7AA800783DA3 /* MemberCTCTViewController.swift in Sources */,
 				760008BA219BF205004D9CE1 /* SettingRouter.swift in Sources */,
 				76A140652192BCA200343521 /* RegisterInteractor.swift in Sources */,
 				767FEBC32192E093006A1D60 /* Menu.swift in Sources */,

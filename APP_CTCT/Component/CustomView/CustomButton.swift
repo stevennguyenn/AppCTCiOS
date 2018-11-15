@@ -17,6 +17,17 @@ class CustomButton: UIView{
     
     weak var delegate : ProcessButton?
     
+    var isEnableButton = true {
+        didSet{
+            if (isEnableButton == false){
+                self.backgroundColor = Colors.colorSliver
+            }
+            if (isEnableButton){
+                self.setColorBackground(color: Colors.colorAccent, alpha: 1)
+            }
+        }
+    }
+    
     var text: UILabel = {
         let text = UILabel()
         text.textColor = Colors.colorWhite

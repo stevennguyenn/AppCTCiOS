@@ -21,5 +21,12 @@ class ProfilePresenter: ProfilePresenterProtocol, ProfileInteractorOutputProtoco
         self.interactor = interactor
         self.router = router
     }
-
+    
+    func gotoChangePassword() {
+        router.gotoChangePassword()
+    }
+    
+    func gotoMemberCTCT() {
+        router.gotoMemberCTCT()
+    }
 }

@@ -27,4 +27,12 @@ class ProfileRouter: ProfileWireframeProtocol {
 
         return view
     }
+    
+    func gotoChangePassword() {
+        viewController?.navigationController?.pushViewController(ChangePasswordRouter.createModule(), animated: true)
+    }
+    
+    func gotoMemberCTCT() {
+        viewController?.navigationController?.pushViewController(MemberCTCTRouter.createModule(), animated: true)
+    }
 }

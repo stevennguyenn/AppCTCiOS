@@ -12,12 +12,15 @@ import Foundation
 
 //MARK: Wireframe -
 protocol ProfileWireframeProtocol: class {
-
+    func gotoChangePassword()
+    func gotoMemberCTCT()
 }
 //MARK: Presenter -
 protocol ProfilePresenterProtocol: class {
 
     var interactor: ProfileInteractorInputProtocol? { get set }
+    func gotoChangePassword()
+    func gotoMemberCTCT()
 }
 
 //MARK: Interactor -

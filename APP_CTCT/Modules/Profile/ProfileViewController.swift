@@ -12,10 +12,52 @@ import UIKit
 
 class ProfileViewController: UIViewController, ProfileViewProtocol {
 
-	var presenter: ProfilePresenterProtocol?
+    @IBOutlet weak var btnSetLisence: UILabel!
+    @IBOutlet weak var imgAVT: UIImageView!
+    @IBOutlet weak var btnCollection: UIButton!
+    @IBOutlet weak var btnCamera: UIButton!
+    @IBOutlet weak var btnChanggPassword: UIButton!
+    @IBOutlet weak var tfPhoneNumber: CustomTextFieldIcon!
+    @IBOutlet weak var btnOk: CustomButton!
+    var presenter: ProfilePresenterProtocol?
 
 	override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
     }
 
+    func setupView(){
+        self.navigationItem.title = "Profile"
+        btnOk.setTextButton(tempText: "Confirm")
+        btnChanggPassword.addTarget(self, action: #selector(changePassword), for: .touchUpInside)
+        tfPhoneNumber.setupTextField(image: #imageLiteral(resourceName: "phonenumber"), hint: "Phone Number")
+        btnCamera.addTarget(self, action: #selector(camera), for: .touchUpInside)
+        btnCollection.addTarget(self, action: #selector(collection), for: .touchUpInside)
+        CameraHandler.shared.delegate = self
+        btnOk.isEnableButton = false
+        btnSetLisence.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(setLisence)))
+        btnSetLisence.isUserInteractionEnabled = true
+    }
+    
+    @objc func setLisence(){
+        presenter?.gotoMemberCTCT()
+    }
+    
+    @objc func collection(){
+        CameraHandler.shared.library(vc: self)
+    }
+    
+    @objc func camera(){
+        CameraHandler.shared.camera(vc: self)
+    }
+    
+    @objc func changePassword(){
+        presenter?.gotoChangePassword()
+    }
+}
+extension ProfileViewController: handleImage{
+    func handle(image: UIImage) {
+        imgAVT.image = image
+        btnOk.isEnableButton = true
+    }
 }
