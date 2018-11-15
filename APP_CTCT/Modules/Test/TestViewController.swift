@@ -66,7 +66,7 @@ extension TestViewController: UITableViewDelegate{
     }
 }
 
-extension TestViewController: ProcessButton{
+extension TestViewController: ProcessRadio{
     func processA(index: Int, id: Int,isChoice: Bool) {
         if arrResultChoice != nil {
             if isChoice{

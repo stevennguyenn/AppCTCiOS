@@ -8,9 +8,12 @@
 
 import Foundation
 import UIKit
+
+
+
 class ViewTextField: UIView{
     
-    let label: UILabel = {
+    var label: UILabel = {
         let view = UILabel.init()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.textColor = Colors.colorBlack
@@ -19,8 +22,17 @@ class ViewTextField: UIView{
         return view
         
     }()
-    
-    let view: UIView = {
+    var labelError : UILabel = {
+        let view = UILabel()
+        view.isHidden = true
+        view.text = "Error"
+        view.textColor = UIColor.red
+        view.font = UIFont.init(name: "Arial", size: 13)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.textAlignment = .right
+        return view
+    }()
+    var view: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.layer.cornerRadius = 5
@@ -53,10 +65,41 @@ class ViewTextField: UIView{
     func setupView(){
         self.addSubview(label)
         self.addSubview(view)
+        textfield.addSubview(labelError)
         view.addSubview(textfield)
         label.setTopLeadingViewLabel(top: self.topAnchor, leading: self.leadingAnchor)
         view.fullTopLeftRightBottom_WithConstant5dp(topAnchor: label.bottomAnchor, leadingAnchor: self.leadingAnchor, bottomAnchor: self.bottomAnchor, trailingAnchor: self.trailingAnchor)
         label.text = "Tester"
         textfield.fullTopLeftRightBottomWidthLeading10dp(topAnchor: view.topAnchor, leadingAnchor: view.leadingAnchor, bottomAnchor: view.bottomAnchor, trailingAnchor: view.trailingAnchor)
+        labelError.centerYAnchor.constraint(equalTo: textfield.centerYAnchor).isActive = true
+        labelError.trailingAnchor.constraint(equalTo: textfield.trailingAnchor, constant: -8).isActive = true
+        textfield.addTarget(self, action: #selector(beginChange), for: .editingDidBegin)
+    }
+    
+    func setDataView(textLabel: String, placeText: String){
+        label.text = textLabel
+        textfield.placeholder = placeText
+    }
+    
+    func getTextTextField() -> String?{
+        if let text = textfield.text{
+            return text
+        }
+        return nil
+    }
+    
+    func setErrorView(error: String){
+        labelError.text = error
+        labelError.isHidden = false
+        view.layer.borderColor = UIColor.red.cgColor
+    }
+    
+    func setViewBegin(){
+        labelError.isHidden = true
+        view.layer.borderColor = UIColor.black.cgColor
+    }
+    
+    @objc func beginChange(){
+        setViewBegin()
     }
 }

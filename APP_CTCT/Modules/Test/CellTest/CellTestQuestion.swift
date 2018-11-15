@@ -22,7 +22,7 @@ class CellTestQuestion: UITableViewCell {
     @IBOutlet weak var lblContentC: UILabel!
     @IBOutlet weak var lblContentD: UILabel!
     
-    weak var delegate: ProcessButton?
+    weak var delegate: ProcessRadio?
     var index = 0
     var id = 0
     

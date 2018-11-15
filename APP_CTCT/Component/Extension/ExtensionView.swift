@@ -59,7 +59,7 @@ extension UIView{
     
     func setTopLeadingViewLabel(top: NSLayoutYAxisAnchor, leading: NSLayoutXAxisAnchor){
         self.topAnchor.constraint(equalTo: top, constant: 5).isActive = true
-        self.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 5).isActive = true
+        self.leadingAnchor.constraint(equalTo: leading, constant: 5).isActive = true
     }
     
     

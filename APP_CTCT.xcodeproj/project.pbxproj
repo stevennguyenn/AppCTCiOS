@@ -73,6 +73,12 @@
 		76BDBBDA2194417400F4364F /* TestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BDBBD42194417400F4364F /* TestInteractor.swift */; };
 		76BDBBDB2194417400F4364F /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76BDBBD52194417400F4364F /* TestViewController.xib */; };
 		76BDBBE22194425800F4364F /* RatioCTCT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BDBBE12194425800F4364F /* RatioCTCT.swift */; };
+		76CD265F219D02BD006D18AB /* ChangePasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD2659219D02BD006D18AB /* ChangePasswordPresenter.swift */; };
+		76CD2660219D02BD006D18AB /* ChangePasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD265A219D02BD006D18AB /* ChangePasswordRouter.swift */; };
+		76CD2661219D02BD006D18AB /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD265B219D02BD006D18AB /* ChangePasswordViewController.swift */; };
+		76CD2662219D02BD006D18AB /* ChangePasswordProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD265C219D02BD006D18AB /* ChangePasswordProtocols.swift */; };
+		76CD2663219D02BD006D18AB /* ChangePasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD265D219D02BD006D18AB /* ChangePasswordInteractor.swift */; };
+		76CD2664219D02BD006D18AB /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76CD265E219D02BD006D18AB /* ChangePasswordViewController.xib */; };
 		76FB2F5C219BBD1000F235B2 /* ProcessRadio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB2F5B219BBD1000F235B2 /* ProcessRadio.swift */; };
 		76FB2F5E219BBFA000F235B2 /* QuestionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB2F5D219BBFA000F235B2 /* QuestionText.swift */; };
 		76FB2F61219BC52800F235B2 /* CellTestQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB2F5F219BC52800F235B2 /* CellTestQuestion.swift */; };
@@ -150,6 +156,12 @@
 		76BDBBD42194417400F4364F /* TestInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestInteractor.swift; sourceTree = "<group>"; };
 		76BDBBD52194417400F4364F /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		76BDBBE12194425800F4364F /* RatioCTCT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatioCTCT.swift; sourceTree = "<group>"; };
+		76CD2659219D02BD006D18AB /* ChangePasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordPresenter.swift; sourceTree = "<group>"; };
+		76CD265A219D02BD006D18AB /* ChangePasswordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordRouter.swift; sourceTree = "<group>"; };
+		76CD265B219D02BD006D18AB /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		76CD265C219D02BD006D18AB /* ChangePasswordProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordProtocols.swift; sourceTree = "<group>"; };
+		76CD265D219D02BD006D18AB /* ChangePasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordInteractor.swift; sourceTree = "<group>"; };
+		76CD265E219D02BD006D18AB /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
 		76FB2F5B219BBD1000F235B2 /* ProcessRadio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessRadio.swift; sourceTree = "<group>"; };
 		76FB2F5D219BBFA000F235B2 /* QuestionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionText.swift; sourceTree = "<group>"; };
 		76FB2F5F219BC52800F235B2 /* CellTestQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTestQuestion.swift; sourceTree = "<group>"; };
@@ -183,6 +195,7 @@
 		760008B2219BF1F2004D9CE1 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				76CD264C219D0269006D18AB /* ChangePassword */,
 				760008B3219BF205004D9CE1 /* SettingPresenter.swift */,
 				760008B4219BF205004D9CE1 /* SettingRouter.swift */,
 				760008B5219BF205004D9CE1 /* SettingViewController.swift */,
@@ -413,6 +426,19 @@
 			path = CellTest;
 			sourceTree = "<group>";
 		};
+		76CD264C219D0269006D18AB /* ChangePassword */ = {
+			isa = PBXGroup;
+			children = (
+				76CD2659219D02BD006D18AB /* ChangePasswordPresenter.swift */,
+				76CD265A219D02BD006D18AB /* ChangePasswordRouter.swift */,
+				76CD265B219D02BD006D18AB /* ChangePasswordViewController.swift */,
+				76CD265C219D02BD006D18AB /* ChangePasswordProtocols.swift */,
+				76CD265D219D02BD006D18AB /* ChangePasswordInteractor.swift */,
+				76CD265E219D02BD006D18AB /* ChangePasswordViewController.xib */,
+			);
+			path = ChangePassword;
+			sourceTree = "<group>";
+		};
 		E2058AFBFC8FD9EC87895791 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -483,6 +509,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76A140862192CC3800343521 /* CellMain.xib in Resources */,
+				76CD2664219D02BD006D18AB /* ChangePasswordViewController.xib in Resources */,
 				76A140692192BCA200343521 /* LoginViewController.xib in Resources */,
 				767FEBD82192F5D6006A1D60 /* ProfileViewController.xib in Resources */,
 				76A1403E2192BBF500343521 /* LaunchScreen.storyboard in Resources */,
@@ -575,6 +602,7 @@
 				76FB2F61219BC52800F235B2 /* CellTestQuestion.swift in Sources */,
 				760008BC219BF205004D9CE1 /* SettingProtocols.swift in Sources */,
 				767FEBD52192F5D6006A1D60 /* ProfileViewController.swift in Sources */,
+				76CD2662219D02BD006D18AB /* ChangePasswordProtocols.swift in Sources */,
 				76BDBBC521942E2F00F4364F /* PDFPresenter.swift in Sources */,
 				76A140852192CC3800343521 /* CellMain.swift in Sources */,
 				76BDBBC621942E2F00F4364F /* PDFRouter.swift in Sources */,
@@ -582,6 +610,7 @@
 				76A1406D2192BCA200343521 /* LoginRouter.swift in Sources */,
 				7643E5FB2193D73D00487579 /* ExtensionImageView.swift in Sources */,
 				76BDBBD82194417400F4364F /* TestViewController.swift in Sources */,
+				76CD265F219D02BD006D18AB /* ChangePasswordPresenter.swift in Sources */,
 				760008B1219BEEBE004D9CE1 /* ViewTextField.swift in Sources */,
 				760008BD219BF205004D9CE1 /* SettingInteractor.swift in Sources */,
 				76BDBBC921942E2F00F4364F /* PDFInteractor.swift in Sources */,
@@ -603,6 +632,8 @@
 				76A140632192BCA200343521 /* RegisterRouter.swift in Sources */,
 				763164872194271B00957B56 /* ExtensionWebView.swift in Sources */,
 				76FB2F64219BCF4700F235B2 /* ResultText.swift in Sources */,
+				76CD2661219D02BD006D18AB /* ChangePasswordViewController.swift in Sources */,
+				76CD2663219D02BD006D18AB /* ChangePasswordInteractor.swift in Sources */,
 				76A140682192BCA200343521 /* LoginInteractor.swift in Sources */,
 				76BDBBD92194417400F4364F /* TestProtocols.swift in Sources */,
 				76A1407F2192CBEF00343521 /* MainProtocols.swift in Sources */,
@@ -617,6 +648,7 @@
 				76FB2F5E219BBFA000F235B2 /* QuestionText.swift in Sources */,
 				760008B9219BF205004D9CE1 /* SettingPresenter.swift in Sources */,
 				76A140312192BBF400343521 /* AppDelegate.swift in Sources */,
+				76CD2660219D02BD006D18AB /* ChangePasswordRouter.swift in Sources */,
 				76BDBBDA2194417400F4364F /* TestInteractor.swift in Sources */,
 				767FEBC52192E0E9006A1D60 /* Data.swift in Sources */,
 				76A140802192CBEF00343521 /* MainInteractor.swift in Sources */,

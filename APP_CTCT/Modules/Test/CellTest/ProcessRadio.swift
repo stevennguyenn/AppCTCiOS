@@ -7,7 +7,7 @@
 //
 
 import Foundation
-protocol ProcessButton: class {
+protocol ProcessRadio: class {
     func processA(index: Int,id: Int,isChoice: Bool)
     func processB(index: Int,id: Int,isChoice: Bool)
     func processC(index: Int,id: Int,isChoice: Bool)
