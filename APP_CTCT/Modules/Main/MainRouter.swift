@@ -34,7 +34,7 @@ class MainRouter: MainWireframeProtocol {
     }
     
     func openTest() {
-        viewController?.navigationController?.pushViewController(TestRouter.createModule(), animated: true
+        viewController?.navigationController?.pushViewController(ProfileRouter.createModule(), animated: true
         )
     }
 }
