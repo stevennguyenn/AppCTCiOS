@@ -30,7 +30,20 @@ class RatioCTCT: UIButton{
         }
     }
     
+    
     override func awakeFromNib() {
+        self.isChecked = false
+        self.addTarget(self, action: #selector(clicked), for: .touchUpInside)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        self.isChecked = false
+        self.addTarget(self, action: #selector(clicked), for: .touchUpInside)
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         self.isChecked = false
         self.addTarget(self, action: #selector(clicked), for: .touchUpInside)
     }

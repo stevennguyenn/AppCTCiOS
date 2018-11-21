@@ -13,12 +13,14 @@ import Foundation
 //MARK: Wireframe -
 protocol LoginWireframeProtocol: class {
     func register()
+    func forgotPassword(isPhone: Bool)
 }
 //MARK: Presenter -
 protocol LoginPresenterProtocol: class {
 
     var interactor: LoginInteractorInputProtocol? { get set }
     func register()
+    func forgotPassword(isPhone: Bool)
 }
 
 //MARK: Interactor -

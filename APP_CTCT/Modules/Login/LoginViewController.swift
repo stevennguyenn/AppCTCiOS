@@ -21,6 +21,7 @@ class LoginViewController: UIViewController, LoginViewProtocol {
     @IBOutlet weak var btLogin: CustomButton!
     @IBOutlet weak var tfPassword: CustomTextFieldIcon!
     @IBOutlet weak var tfEmail: CustomTextFieldIcon!
+    @IBOutlet weak var lblForgotPassword: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +66,13 @@ class LoginViewController: UIViewController, LoginViewProtocol {
         let gestureLoginFacebook = UITapGestureRecognizer(target: self, action: #selector(loginFacebook))
         btLoginFacabook.addGestureRecognizer(gestureLoginFacebook)
         btRegister.addTarget(self, action: #selector(register), for: .touchUpInside)
+        lblForgotPassword.isUserInteractionEnabled = true
+        lblForgotPassword.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(forgotPassowrd)))
+    }
+    
+    @objc func forgotPassowrd(){
+        ViewChoiceForgotPassword.shared.showViewChoice()
+        ViewChoiceForgotPassword.shared.delegate = self
     }
     
     @objc func register(){
@@ -78,5 +86,10 @@ class LoginViewController: UIViewController, LoginViewProtocol {
     
     @objc func login(){
         print("login")
+    }
+}
+extension LoginViewController: clickDialog{
+    func confirm(isPhone: Bool) {
+        presenter?.forgotPassword(isPhone: isPhone)
     }
 }

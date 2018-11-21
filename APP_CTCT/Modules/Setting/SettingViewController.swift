@@ -17,5 +17,4 @@ class SettingViewController: UIViewController, SettingViewProtocol {
 	override func viewDidLoad() {
         super.viewDidLoad()
     }
-
 }

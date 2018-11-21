@@ -31,4 +31,10 @@ class LoginRouter: LoginWireframeProtocol {
     func register() {
         viewController?.navigationController?.pushViewController(RegisterRouter.createModule(), animated: true)
     }
+    
+    func forgotPassword(isPhone: Bool) {
+        let vc = ForgotPasswordRouter.createModule(isPhone: isPhone)
+        viewController?.present(vc,animated: true)
+    }
+    
 }

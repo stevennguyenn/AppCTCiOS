@@ -49,6 +49,14 @@ class CustomTextFieldIcon: UIView{
         textField.placeholder = hint
     }
     
+    func getText() -> String? {
+        return textField.text
+    }
+    
+    func setKeyboardNumber(){
+        textField.keyboardType = UIKeyboardType.decimalPad
+    }
+    
     func setViewPassword(){
         textField.isSecureTextEntry = true
     }

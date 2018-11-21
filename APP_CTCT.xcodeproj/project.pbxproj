@@ -15,7 +15,24 @@
 		760008BD219BF205004D9CE1 /* SettingInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760008B7219BF205004D9CE1 /* SettingInteractor.swift */; };
 		760008BE219BF205004D9CE1 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760008B8219BF205004D9CE1 /* SettingViewController.xib */; };
 		763164872194271B00957B56 /* ExtensionWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763164862194271B00957B56 /* ExtensionWebView.swift */; };
+		763A477121A5265F000982D8 /* PhoneNumberEntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A477021A5265F000982D8 /* PhoneNumberEntryVC.swift */; };
+		763A477521A52C30000982D8 /* Alter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A477421A52C30000982D8 /* Alter.swift */; };
+		763A477721A544E9000982D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 763A477621A544E9000982D8 /* GoogleService-Info.plist */; };
+		763A477A21A54E7F000982D8 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A477921A54E7F000982D8 /* Extension+String.swift */; };
 		7643E5FB2193D73D00487579 /* ExtensionImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643E5FA2193D73D00487579 /* ExtensionImageView.swift */; };
+		7673339321A39B2B00F19190 /* ConfirmPhoneNumberPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673338D21A39B2B00F19190 /* ConfirmPhoneNumberPresenter.swift */; };
+		7673339421A39B2B00F19190 /* ConfirmPhoneNumberRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673338E21A39B2B00F19190 /* ConfirmPhoneNumberRouter.swift */; };
+		7673339521A39B2B00F19190 /* ConfirmPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673338F21A39B2B00F19190 /* ConfirmPhoneNumberViewController.swift */; };
+		7673339621A39B2B00F19190 /* ConfirmPhoneNumberProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673339021A39B2B00F19190 /* ConfirmPhoneNumberProtocols.swift */; };
+		7673339721A39B2B00F19190 /* ConfirmPhoneNumberInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673339121A39B2B00F19190 /* ConfirmPhoneNumberInteractor.swift */; };
+		7673339821A39B2B00F19190 /* ConfirmPhoneNumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7673339221A39B2B00F19190 /* ConfirmPhoneNumberViewController.xib */; };
+		767333A021A4007000F19190 /* ForgotPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673339A21A4007000F19190 /* ForgotPasswordPresenter.swift */; };
+		767333A121A4007000F19190 /* ForgotPasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673339B21A4007000F19190 /* ForgotPasswordRouter.swift */; };
+		767333A221A4007000F19190 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673339C21A4007000F19190 /* ForgotPasswordViewController.swift */; };
+		767333A321A4007000F19190 /* ForgotPasswordProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673339D21A4007000F19190 /* ForgotPasswordProtocols.swift */; };
+		767333A421A4007000F19190 /* ForgotPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673339E21A4007000F19190 /* ForgotPasswordInteractor.swift */; };
+		767333A521A4007000F19190 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7673339F21A4007000F19190 /* ForgotPasswordViewController.xib */; };
+		767333A921A4151300F19190 /* ViewChoiceForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767333A821A4151300F19190 /* ViewChoiceForgotPassword.swift */; };
 		7676DEED219D5DDB00783DA3 /* ChangeSuccessedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676DEEB219D5DDB00783DA3 /* ChangeSuccessedViewController.swift */; };
 		7676DEEE219D5DDB00783DA3 /* ChangeSuccessedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7676DEEC219D5DDB00783DA3 /* ChangeSuccessedViewController.xib */; };
 		7676DEF1219D5EF100783DA3 /* ChangeFailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676DEEF219D5EF100783DA3 /* ChangeFailedViewController.swift */; };
@@ -94,7 +111,7 @@
 		76FB2F61219BC52800F235B2 /* CellTestQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB2F5F219BC52800F235B2 /* CellTestQuestion.swift */; };
 		76FB2F62219BC52800F235B2 /* CellTestQuestion.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76FB2F60219BC52800F235B2 /* CellTestQuestion.xib */; };
 		76FB2F64219BCF4700F235B2 /* ResultText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB2F63219BCF4700F235B2 /* ResultText.swift */; };
-		B5F83411161458A95DDA7BE5 /* Pods_APP_CTCT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E51A76AD55BFA880FF9D50 /* Pods_APP_CTCT.framework */; };
+		B5F83411161458A95DDA7BE5 /* Pods_APP_CTCT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E51A76AD55BFA880FF9D50 /* Pods_APP_CTCT.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,7 +123,25 @@
 		760008B7219BF205004D9CE1 /* SettingInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingInteractor.swift; sourceTree = "<group>"; };
 		760008B8219BF205004D9CE1 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
 		763164862194271B00957B56 /* ExtensionWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionWebView.swift; sourceTree = "<group>"; };
+		763A477021A5265F000982D8 /* PhoneNumberEntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberEntryVC.swift; sourceTree = "<group>"; };
+		763A477421A52C30000982D8 /* Alter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alter.swift; sourceTree = "<group>"; };
+		763A477621A544E9000982D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		763A477821A54600000982D8 /* APP_CTCT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = APP_CTCT.entitlements; sourceTree = "<group>"; };
+		763A477921A54E7F000982D8 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		7643E5FA2193D73D00487579 /* ExtensionImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionImageView.swift; sourceTree = "<group>"; };
+		7673338D21A39B2B00F19190 /* ConfirmPhoneNumberPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneNumberPresenter.swift; sourceTree = "<group>"; };
+		7673338E21A39B2B00F19190 /* ConfirmPhoneNumberRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneNumberRouter.swift; sourceTree = "<group>"; };
+		7673338F21A39B2B00F19190 /* ConfirmPhoneNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		7673339021A39B2B00F19190 /* ConfirmPhoneNumberProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneNumberProtocols.swift; sourceTree = "<group>"; };
+		7673339121A39B2B00F19190 /* ConfirmPhoneNumberInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneNumberInteractor.swift; sourceTree = "<group>"; };
+		7673339221A39B2B00F19190 /* ConfirmPhoneNumberViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmPhoneNumberViewController.xib; sourceTree = "<group>"; };
+		7673339A21A4007000F19190 /* ForgotPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordPresenter.swift; sourceTree = "<group>"; };
+		7673339B21A4007000F19190 /* ForgotPasswordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRouter.swift; sourceTree = "<group>"; };
+		7673339C21A4007000F19190 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		7673339D21A4007000F19190 /* ForgotPasswordProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordProtocols.swift; sourceTree = "<group>"; };
+		7673339E21A4007000F19190 /* ForgotPasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordInteractor.swift; sourceTree = "<group>"; };
+		7673339F21A4007000F19190 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		767333A821A4151300F19190 /* ViewChoiceForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewChoiceForgotPassword.swift; sourceTree = "<group>"; };
 		7676DEEB219D5DDB00783DA3 /* ChangeSuccessedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSuccessedViewController.swift; sourceTree = "<group>"; };
 		7676DEEC219D5DDB00783DA3 /* ChangeSuccessedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeSuccessedViewController.xib; sourceTree = "<group>"; };
 		7676DEEF219D5EF100783DA3 /* ChangeFailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeFailedViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +250,8 @@
 		760008B2219BF1F2004D9CE1 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				7673339921A4005B00F19190 /* ForgotPassword */,
+				7673338C21A39AFC00F19190 /* ConfirmPhoneNumber */,
 				76CD264C219D0269006D18AB /* ChangePassword */,
 				760008B3219BF205004D9CE1 /* SettingPresenter.swift */,
 				760008B4219BF205004D9CE1 /* SettingRouter.swift */,
@@ -224,6 +261,14 @@
 				760008B8219BF205004D9CE1 /* SettingViewController.xib */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		763A477321A52C1F000982D8 /* Alter */ = {
+			isa = PBXGroup;
+			children = (
+				763A477421A52C30000982D8 /* Alter.swift */,
+			);
+			path = Alter;
 			sourceTree = "<group>";
 		};
 		7643E5FE2193E3A200487579 /* ReadPDF */ = {
@@ -237,6 +282,32 @@
 				76BDBBC421942E2F00F4364F /* PDFViewController.xib */,
 			);
 			path = ReadPDF;
+			sourceTree = "<group>";
+		};
+		7673338C21A39AFC00F19190 /* ConfirmPhoneNumber */ = {
+			isa = PBXGroup;
+			children = (
+				7673338D21A39B2B00F19190 /* ConfirmPhoneNumberPresenter.swift */,
+				7673338E21A39B2B00F19190 /* ConfirmPhoneNumberRouter.swift */,
+				7673338F21A39B2B00F19190 /* ConfirmPhoneNumberViewController.swift */,
+				7673339021A39B2B00F19190 /* ConfirmPhoneNumberProtocols.swift */,
+				7673339121A39B2B00F19190 /* ConfirmPhoneNumberInteractor.swift */,
+				7673339221A39B2B00F19190 /* ConfirmPhoneNumberViewController.xib */,
+			);
+			path = ConfirmPhoneNumber;
+			sourceTree = "<group>";
+		};
+		7673339921A4005B00F19190 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				7673339A21A4007000F19190 /* ForgotPasswordPresenter.swift */,
+				7673339B21A4007000F19190 /* ForgotPasswordRouter.swift */,
+				7673339C21A4007000F19190 /* ForgotPasswordViewController.swift */,
+				7673339D21A4007000F19190 /* ForgotPasswordProtocols.swift */,
+				7673339E21A4007000F19190 /* ForgotPasswordInteractor.swift */,
+				7673339F21A4007000F19190 /* ForgotPasswordViewController.xib */,
+			);
+			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
 		7676DEE9219D5DA700783DA3 /* Successed */ = {
@@ -305,6 +376,7 @@
 		76A1402F2192BBF400343521 /* APP_CTCT */ = {
 			isa = PBXGroup;
 			children = (
+				763A477821A54600000982D8 /* APP_CTCT.entitlements */,
 				76A140542192BCA200343521 /* Component */,
 				76A1405E2192BCA200343521 /* Entity */,
 				76A140602192BCA200343521 /* Helper */,
@@ -314,6 +386,7 @@
 				76A1403A2192BBF500343521 /* Assets.xcassets */,
 				76A1403C2192BBF500343521 /* LaunchScreen.storyboard */,
 				76A1403F2192BBF500343521 /* Info.plist */,
+				763A477621A544E9000982D8 /* GoogleService-Info.plist */,
 				76A140372192BBF400343521 /* APP_CTCT.xcdatamodeld */,
 			);
 			path = APP_CTCT;
@@ -362,6 +435,7 @@
 		76A140542192BCA200343521 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				763A477321A52C1F000982D8 /* Alter */,
 				76A140552192BCA200343521 /* Extension */,
 				76A140582192BCA200343521 /* Constant */,
 				76A1405B2192BCA200343521 /* CustomView */,
@@ -377,6 +451,7 @@
 				7643E5FA2193D73D00487579 /* ExtensionImageView.swift */,
 				763164862194271B00957B56 /* ExtensionWebView.swift */,
 				76BDBBCD21943A9B00F4364F /* ExtensionUIColor.swift */,
+				763A477921A54E7F000982D8 /* Extension+String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -399,6 +474,7 @@
 				76BDBBCB2194304000F4364F /* ViewIndicator.swift */,
 				76BDBBE12194425800F4364F /* RatioCTCT.swift */,
 				760008B0219BEEBE004D9CE1 /* ViewTextField.swift */,
+				767333A821A4151300F19190 /* ViewChoiceForgotPassword.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -425,6 +501,7 @@
 			isa = PBXGroup;
 			children = (
 				76A140612192BCA200343521 /* CameraHandler.swift */,
+				763A477021A5265F000982D8 /* PhoneNumberEntryVC.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -536,6 +613,11 @@
 				TargetAttributes = {
 					76A1402C2192BBF400343521 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -573,8 +655,11 @@
 				76FB2F62219BC52800F235B2 /* CellTestQuestion.xib in Resources */,
 				760008BE219BF205004D9CE1 /* SettingViewController.xib in Resources */,
 				7676DEEE219D5DDB00783DA3 /* ChangeSuccessedViewController.xib in Resources */,
+				763A477721A544E9000982D8 /* GoogleService-Info.plist in Resources */,
 				76A1403B2192BBF500343521 /* Assets.xcassets in Resources */,
+				767333A521A4007000F19190 /* ForgotPasswordViewController.xib in Resources */,
 				76A140662192BCA200343521 /* RegisterViewController.xib in Resources */,
+				7673339821A39B2B00F19190 /* ConfirmPhoneNumberViewController.xib in Resources */,
 				76BDBBDB2194417400F4364F /* TestViewController.xib in Resources */,
 				7676DEF2219D5EF100783DA3 /* ChangeFailedViewController.xib in Resources */,
 				76BDBBCA21942E2F00F4364F /* PDFViewController.xib in Resources */,
@@ -597,10 +682,14 @@
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SinchVerification-Swift/SinchVerification.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -610,10 +699,14 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SinchVerification.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -653,7 +746,9 @@
 				767FEBD42192F5D6006A1D60 /* ProfileRouter.swift in Sources */,
 				76BDBBD72194417400F4364F /* TestRouter.swift in Sources */,
 				76BDBBCC2194304000F4364F /* ViewIndicator.swift in Sources */,
+				7673339621A39B2B00F19190 /* ConfirmPhoneNumberProtocols.swift in Sources */,
 				767FEBD62192F5D6006A1D60 /* ProfileProtocols.swift in Sources */,
+				767333A421A4007000F19190 /* ForgotPasswordInteractor.swift in Sources */,
 				76A1406A2192BCA200343521 /* LoginViewController.swift in Sources */,
 				76FB2F5C219BBD1000F235B2 /* ProcessRadio.swift in Sources */,
 				767FEBC82192EF53006A1D60 /* CellHeader.swift in Sources */,
@@ -663,15 +758,18 @@
 				76CD2662219D02BD006D18AB /* ChangePasswordProtocols.swift in Sources */,
 				76BDBBC521942E2F00F4364F /* PDFPresenter.swift in Sources */,
 				76A140852192CC3800343521 /* CellMain.swift in Sources */,
+				763A477A21A54E7F000982D8 /* Extension+String.swift in Sources */,
 				76BDBBC621942E2F00F4364F /* PDFRouter.swift in Sources */,
 				76A1406B2192BCA200343521 /* LoginProtocols.swift in Sources */,
 				7676DEFB219D7AA800783DA3 /* MemberCTCTPresenter.swift in Sources */,
 				76A1406D2192BCA200343521 /* LoginRouter.swift in Sources */,
 				7676DEFE219D7AA800783DA3 /* MemberCTCTProtocols.swift in Sources */,
 				7643E5FB2193D73D00487579 /* ExtensionImageView.swift in Sources */,
+				7673339721A39B2B00F19190 /* ConfirmPhoneNumberInteractor.swift in Sources */,
 				76BDBBD82194417400F4364F /* TestViewController.swift in Sources */,
 				76CD265F219D02BD006D18AB /* ChangePasswordPresenter.swift in Sources */,
 				760008B1219BEEBE004D9CE1 /* ViewTextField.swift in Sources */,
+				763A477521A52C30000982D8 /* Alter.swift in Sources */,
 				760008BD219BF205004D9CE1 /* SettingInteractor.swift in Sources */,
 				76BDBBC921942E2F00F4364F /* PDFInteractor.swift in Sources */,
 				76BDBBC821942E2F00F4364F /* PDFProtocols.swift in Sources */,
@@ -688,18 +786,26 @@
 				76A140712192BCA200343521 /* Colors.swift in Sources */,
 				767FEBCB2192F08D006A1D60 /* Header.swift in Sources */,
 				760008BB219BF205004D9CE1 /* SettingViewController.swift in Sources */,
+				767333A021A4007000F19190 /* ForgotPasswordPresenter.swift in Sources */,
+				7673339421A39B2B00F19190 /* ConfirmPhoneNumberRouter.swift in Sources */,
 				76A140672192BCA200343521 /* RegisterViewController.swift in Sources */,
 				76A140632192BCA200343521 /* RegisterRouter.swift in Sources */,
+				767333A321A4007000F19190 /* ForgotPasswordProtocols.swift in Sources */,
 				763164872194271B00957B56 /* ExtensionWebView.swift in Sources */,
+				767333A121A4007000F19190 /* ForgotPasswordRouter.swift in Sources */,
+				767333A921A4151300F19190 /* ViewChoiceForgotPassword.swift in Sources */,
 				7676DEFC219D7AA800783DA3 /* MemberCTCTRouter.swift in Sources */,
+				7673339321A39B2B00F19190 /* ConfirmPhoneNumberPresenter.swift in Sources */,
 				76FB2F64219BCF4700F235B2 /* ResultText.swift in Sources */,
 				76CD2661219D02BD006D18AB /* ChangePasswordViewController.swift in Sources */,
+				763A477121A5265F000982D8 /* PhoneNumberEntryVC.swift in Sources */,
 				76CD2663219D02BD006D18AB /* ChangePasswordInteractor.swift in Sources */,
 				76A140682192BCA200343521 /* LoginInteractor.swift in Sources */,
 				76BDBBD92194417400F4364F /* TestProtocols.swift in Sources */,
 				76A1407F2192CBEF00343521 /* MainProtocols.swift in Sources */,
 				76BDBBD62194417400F4364F /* TestPresenter.swift in Sources */,
 				76A1407C2192CBEF00343521 /* MainPresenter.swift in Sources */,
+				7673339521A39B2B00F19190 /* ConfirmPhoneNumberViewController.swift in Sources */,
 				76A140722192BCA200343521 /* CustomButton.swift in Sources */,
 				7676DEED219D5DDB00783DA3 /* ChangeSuccessedViewController.swift in Sources */,
 				7676DEFD219D7AA800783DA3 /* MemberCTCTViewController.swift in Sources */,
@@ -715,6 +821,7 @@
 				76CD2660219D02BD006D18AB /* ChangePasswordRouter.swift in Sources */,
 				76BDBBDA2194417400F4364F /* TestInteractor.swift in Sources */,
 				767FEBC52192E0E9006A1D60 /* Data.swift in Sources */,
+				767333A221A4007000F19190 /* ForgotPasswordViewController.swift in Sources */,
 				76A140802192CBEF00343521 /* MainInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -854,7 +961,9 @@
 			baseConfigurationReference = 9578BE4606D736F7E727851D /* Pods-APP_CTCT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = APP_CTCT/APP_CTCT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJLX9MW3AX;
 				INFOPLIST_FILE = APP_CTCT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -890,7 +999,9 @@
 			baseConfigurationReference = FD25A4B95DA7402A354E5517 /* Pods-APP_CTCT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = APP_CTCT/APP_CTCT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FJLX9MW3AX;
 				INFOPLIST_FILE = APP_CTCT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

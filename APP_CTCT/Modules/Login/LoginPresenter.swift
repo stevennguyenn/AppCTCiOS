@@ -11,7 +11,7 @@
 import UIKit
 
 class LoginPresenter: LoginPresenterProtocol, LoginInteractorOutputProtocol {
-   
+
     weak private var view: LoginViewProtocol?
     var interactor: LoginInteractorInputProtocol?
     private let router: LoginWireframeProtocol
@@ -25,5 +25,8 @@ class LoginPresenter: LoginPresenterProtocol, LoginInteractorOutputProtocol {
     func register() {
         router.register()
     }
-
+    
+    func forgotPassword(isPhone: Bool) {
+        router.forgotPassword(isPhone: isPhone)
+    }
 }

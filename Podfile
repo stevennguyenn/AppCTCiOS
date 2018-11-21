@@ -12,4 +12,7 @@ target 'APP_CTCT' do
 	pod 'SDWebImage', '~> 4.0'
 	pod 'ObjectMapper'
 	pod 'NVActivityIndicatorView'
+	pod 'SinchVerification-Swift'
+	pod 'Firebase/Core'
+	pod 'Firebase/Auth'
 end
