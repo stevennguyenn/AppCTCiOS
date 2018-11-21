@@ -36,4 +36,8 @@ struct Strings {
         static let notification = "Notification"
         static let cancel = "Cancel"
     }
+    
+    struct Setting{
+        static let titleSetting : [[String]] = [["Info CTCT","Info BKU"],["Profile Info","Account"],["Change Password","Notification Settings"],["Terms of Use","Privacy Policy"],[]]
+    }
 }

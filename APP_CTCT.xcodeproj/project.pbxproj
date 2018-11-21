@@ -19,6 +19,11 @@
 		763A477521A52C30000982D8 /* Alter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A477421A52C30000982D8 /* Alter.swift */; };
 		763A477721A544E9000982D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 763A477621A544E9000982D8 /* GoogleService-Info.plist */; };
 		763A477A21A54E7F000982D8 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A477921A54E7F000982D8 /* Extension+String.swift */; };
+		763A477C21A55F4D000982D8 /* Extension+UITableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A477B21A55F4C000982D8 /* Extension+UITableview.swift */; };
+		763A478421A56298000982D8 /* CellLineSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A478221A56298000982D8 /* CellLineSetting.swift */; };
+		763A478521A56298000982D8 /* CellLineSetting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763A478321A56298000982D8 /* CellLineSetting.xib */; };
+		763A478821A56764000982D8 /* LogoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763A478621A56764000982D8 /* LogoutCell.swift */; };
+		763A478921A56764000982D8 /* LogoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 763A478721A56764000982D8 /* LogoutCell.xib */; };
 		7643E5FB2193D73D00487579 /* ExtensionImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643E5FA2193D73D00487579 /* ExtensionImageView.swift */; };
 		7673339321A39B2B00F19190 /* ConfirmPhoneNumberPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673338D21A39B2B00F19190 /* ConfirmPhoneNumberPresenter.swift */; };
 		7673339421A39B2B00F19190 /* ConfirmPhoneNumberRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7673338E21A39B2B00F19190 /* ConfirmPhoneNumberRouter.swift */; };
@@ -128,6 +133,11 @@
 		763A477621A544E9000982D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		763A477821A54600000982D8 /* APP_CTCT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = APP_CTCT.entitlements; sourceTree = "<group>"; };
 		763A477921A54E7F000982D8 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		763A477B21A55F4C000982D8 /* Extension+UITableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableview.swift"; sourceTree = "<group>"; };
+		763A478221A56298000982D8 /* CellLineSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellLineSetting.swift; sourceTree = "<group>"; };
+		763A478321A56298000982D8 /* CellLineSetting.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CellLineSetting.xib; sourceTree = "<group>"; };
+		763A478621A56764000982D8 /* LogoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutCell.swift; sourceTree = "<group>"; };
+		763A478721A56764000982D8 /* LogoutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogoutCell.xib; sourceTree = "<group>"; };
 		7643E5FA2193D73D00487579 /* ExtensionImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionImageView.swift; sourceTree = "<group>"; };
 		7673338D21A39B2B00F19190 /* ConfirmPhoneNumberPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneNumberPresenter.swift; sourceTree = "<group>"; };
 		7673338E21A39B2B00F19190 /* ConfirmPhoneNumberRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneNumberRouter.swift; sourceTree = "<group>"; };
@@ -250,6 +260,7 @@
 		760008B2219BF1F2004D9CE1 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				763A477D21A5624A000982D8 /* Cell */,
 				7673339921A4005B00F19190 /* ForgotPassword */,
 				7673338C21A39AFC00F19190 /* ConfirmPhoneNumber */,
 				76CD264C219D0269006D18AB /* ChangePassword */,
@@ -269,6 +280,17 @@
 				763A477421A52C30000982D8 /* Alter.swift */,
 			);
 			path = Alter;
+			sourceTree = "<group>";
+		};
+		763A477D21A5624A000982D8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				763A478221A56298000982D8 /* CellLineSetting.swift */,
+				763A478321A56298000982D8 /* CellLineSetting.xib */,
+				763A478621A56764000982D8 /* LogoutCell.swift */,
+				763A478721A56764000982D8 /* LogoutCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		7643E5FE2193E3A200487579 /* ReadPDF */ = {
@@ -452,6 +474,7 @@
 				763164862194271B00957B56 /* ExtensionWebView.swift */,
 				76BDBBCD21943A9B00F4364F /* ExtensionUIColor.swift */,
 				763A477921A54E7F000982D8 /* Extension+String.swift */,
+				763A477B21A55F4C000982D8 /* Extension+UITableview.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -658,11 +681,13 @@
 				763A477721A544E9000982D8 /* GoogleService-Info.plist in Resources */,
 				76A1403B2192BBF500343521 /* Assets.xcassets in Resources */,
 				767333A521A4007000F19190 /* ForgotPasswordViewController.xib in Resources */,
+				763A478521A56298000982D8 /* CellLineSetting.xib in Resources */,
 				76A140662192BCA200343521 /* RegisterViewController.xib in Resources */,
 				7673339821A39B2B00F19190 /* ConfirmPhoneNumberViewController.xib in Resources */,
 				76BDBBDB2194417400F4364F /* TestViewController.xib in Resources */,
 				7676DEF2219D5EF100783DA3 /* ChangeFailedViewController.xib in Resources */,
 				76BDBBCA21942E2F00F4364F /* PDFViewController.xib in Resources */,
+				763A478921A56764000982D8 /* LogoutCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,6 +828,7 @@
 				76A140682192BCA200343521 /* LoginInteractor.swift in Sources */,
 				76BDBBD92194417400F4364F /* TestProtocols.swift in Sources */,
 				76A1407F2192CBEF00343521 /* MainProtocols.swift in Sources */,
+				763A477C21A55F4D000982D8 /* Extension+UITableview.swift in Sources */,
 				76BDBBD62194417400F4364F /* TestPresenter.swift in Sources */,
 				76A1407C2192CBEF00343521 /* MainPresenter.swift in Sources */,
 				7673339521A39B2B00F19190 /* ConfirmPhoneNumberViewController.swift in Sources */,
@@ -814,6 +840,7 @@
 				767FEBC32192E093006A1D60 /* Menu.swift in Sources */,
 				76A140622192BCA200343521 /* RegisterPresenter.swift in Sources */,
 				76BDBBCE21943A9B00F4364F /* ExtensionUIColor.swift in Sources */,
+				763A478821A56764000982D8 /* LogoutCell.swift in Sources */,
 				76FB2F5E219BBFA000F235B2 /* QuestionText.swift in Sources */,
 				760008B9219BF205004D9CE1 /* SettingPresenter.swift in Sources */,
 				7676DEF1219D5EF100783DA3 /* ChangeFailedViewController.swift in Sources */,
@@ -822,6 +849,7 @@
 				76BDBBDA2194417400F4364F /* TestInteractor.swift in Sources */,
 				767FEBC52192E0E9006A1D60 /* Data.swift in Sources */,
 				767333A221A4007000F19190 /* ForgotPasswordViewController.swift in Sources */,
+				763A478421A56298000982D8 /* CellLineSetting.swift in Sources */,
 				76A140802192CBEF00343521 /* MainInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

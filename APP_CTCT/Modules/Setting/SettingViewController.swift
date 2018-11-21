@@ -13,8 +13,53 @@ import UIKit
 class SettingViewController: UIViewController, SettingViewProtocol {
 
 	var presenter: SettingPresenterProtocol?
+    
+    var setting = Strings.Setting.titleSetting
 
-	override func viewDidLoad() {
+    @IBOutlet weak var tbSetting: UITableView!
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
+        register()
+    }
+    
+    func register(){
+        tbSetting.registerXibFile(CellLineSetting.self)
+        tbSetting.registerXibFile(LogoutCell.self)
+        tbSetting.dataSource = self
+        tbSetting.delegate = self
+    }
+}
+extension SettingViewController: UITableViewDataSource{
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return setting.count
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return setting[section].count != 0 ? setting[section].count : 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if (indexPath.section == setting.count - 1){
+            let cell = tableView.dequeue(LogoutCell.self, indexPath: indexPath)
+            return cell
+        }
+        let cell = tableView.dequeue(CellLineSetting.self, indexPath: indexPath)
+        cell.setupCell(title: setting[indexPath.section][indexPath.row])
+        return cell
+    }
+}
+extension SettingViewController: UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(60)
+    }
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if section == setting.count - 1 {
+            return 0
+        }
+        return 20
     }
 }

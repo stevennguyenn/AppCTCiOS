@@ -4,12 +4,13 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14313.18"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingViewController">
             <connections>
+                <outlet property="tbSetting" destination="H0l-al-j83" id="j0G-xU-msc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,19 +19,17 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rYc-Ee-bir" customClass="ViewTextField" customModule="APP_CTCT" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="100" width="375" height="60"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H0l-al-j83">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="60" id="Kfa-w1-WUf"/>
-                    </constraints>
-                </view>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="rYc-Ee-bir" secondAttribute="trailing" id="0z3-To-zQK"/>
-                <constraint firstItem="rYc-Ee-bir" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="4P0-IB-ROh"/>
-                <constraint firstItem="rYc-Ee-bir" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cd0-o8-KoE"/>
+                <constraint firstAttribute="trailing" secondItem="H0l-al-j83" secondAttribute="trailing" id="6Ke-y0-yca"/>
+                <constraint firstAttribute="bottom" secondItem="H0l-al-j83" secondAttribute="bottom" id="7H8-kQ-Kv9"/>
+                <constraint firstItem="H0l-al-j83" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="iyt-0B-grt"/>
+                <constraint firstItem="H0l-al-j83" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xya-22-BQq"/>
             </constraints>
         </view>
     </objects>
