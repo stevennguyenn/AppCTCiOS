@@ -21,6 +21,11 @@ class SettingViewController: UIViewController, SettingViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         register()
+        setupView()
+    }
+    
+    func setupView(){
+        self.navigationController?.navigationBar.topItem?.title = Strings.Navigation.setting
     }
     
     func register(){

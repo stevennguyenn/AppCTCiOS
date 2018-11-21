@@ -31,6 +31,7 @@ struct Strings {
         static let register = "Register"
         static let phoneNumber = "Phone Number"
         static let forgotPassword = "Forgot Password"
+        static let setting = "Settings"
     }
     struct AlterController {
         static let notification = "Notification"
