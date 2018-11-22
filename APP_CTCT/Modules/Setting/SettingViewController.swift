@@ -10,10 +10,9 @@
 
 import UIKit
 
-class SettingViewController: UIViewController, SettingViewProtocol {
+class SettingViewController: BaseViewController, SettingViewProtocol {
 
 	var presenter: SettingPresenterProtocol?
-    
     var setting = Strings.Setting.titleSetting
 
     @IBOutlet weak var tbSetting: UITableView!
@@ -21,11 +20,11 @@ class SettingViewController: UIViewController, SettingViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         register()
-        setupView()
     }
     
-    func setupView(){
-        self.navigationController?.navigationBar.topItem?.title = Strings.Navigation.setting
+    override func setupNavigation() {
+        super.setupNavigation()
+        self.setTitle(title: Strings.Navigation.settings)
     }
     
     func register(){
@@ -56,7 +55,14 @@ extension SettingViewController: UITableViewDataSource{
 }
 extension SettingViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        switch setting[indexPath.section][indexPath.row] {
+        case "Info BKU":
+            presenter?.openInfoBKU()
+        case "Change Password":
+            presenter?.openChangePassword()
+        default:
+            print("error")
+        }
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return CGFloat(60)

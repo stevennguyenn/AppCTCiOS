@@ -10,7 +10,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController, ProfileViewProtocol {
+class ProfileViewController: BaseViewController, ProfileViewProtocol {
 
     @IBOutlet weak var btnSetLisence: UILabel!
     @IBOutlet weak var imgAVT: UIImageView!
@@ -25,12 +25,16 @@ class ProfileViewController: UIViewController, ProfileViewProtocol {
         super.viewDidLoad()
         setupView()
     }
+    
+    override func setupNavigation() {
+        super.setupNavigation()
+        self.setTitle(title: Strings.Navigation.profile)
+    }
 
     func setupView(){
-        self.navigationItem.title = "Profile"
-        btnOk.setTextButton(tempText: "Confirm")
+        btnOk.setTextButton(tempText: Strings.Button.confirm)
         btnChanggPassword.addTarget(self, action: #selector(changePassword), for: .touchUpInside)
-        tfPhoneNumber.setupTextField(image: #imageLiteral(resourceName: "phonenumber"), hint: "Phone Number")
+        tfPhoneNumber.setupTextField(image: #imageLiteral(resourceName: "phonenumber"), hint: Strings.TextField.phoneNumber)
         btnCamera.addTarget(self, action: #selector(camera), for: .touchUpInside)
         btnCollection.addTarget(self, action: #selector(collection), for: .touchUpInside)
         CameraHandler.shared.delegate = self

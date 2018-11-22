@@ -21,5 +21,12 @@ class SettingPresenter: SettingPresenterProtocol, SettingInteractorOutputProtoco
         self.interactor = interactor
         self.router = router
     }
-
+    
+    func openInfoBKU() {
+        router.openInfoBKU()
+    }
+    
+    func openChangePassword() {
+        router.openChangePassword()
+    }
 }

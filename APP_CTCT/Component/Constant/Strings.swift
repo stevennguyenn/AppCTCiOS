@@ -31,7 +31,9 @@ struct Strings {
         static let register = "Register"
         static let phoneNumber = "Phone Number"
         static let forgotPassword = "Forgot Password"
-        static let setting = "Settings"
+        static let settings = "Settings"
+        static let changPassword = "Change password"
+        static let profile = "Profile"
     }
     struct AlterController {
         static let notification = "Notification"
@@ -40,5 +42,9 @@ struct Strings {
     
     struct Setting{
         static let titleSetting : [[String]] = [["Info CTCT","Info BKU"],["Profile Info","Account"],["Change Password","Notification Settings"],["Terms of Use","Privacy Policy"],[]]
+    }
+    
+    struct links{
+        static let linkBKU = "http://www.hcmut.edu.vn/vi"
     }
 }

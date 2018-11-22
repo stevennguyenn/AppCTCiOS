@@ -27,4 +27,14 @@ class SettingRouter: SettingWireframeProtocol {
 
         return view
     }
+    
+    func openInfoBKU() {
+        viewController?.navigationController?.pushViewController(InfoBKURouter.createModule(), animated: true)
+    }
+    
+    func openChangePassword() {
+        viewController?.navigationController?.pushViewController(ChangePasswordRouter.createModule(), animated: true)
+    }
+    
+
 }

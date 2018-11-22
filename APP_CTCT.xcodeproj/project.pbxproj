@@ -113,6 +113,13 @@
 		76CD2662219D02BD006D18AB /* ChangePasswordProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD265C219D02BD006D18AB /* ChangePasswordProtocols.swift */; };
 		76CD2663219D02BD006D18AB /* ChangePasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CD265D219D02BD006D18AB /* ChangePasswordInteractor.swift */; };
 		76CD2664219D02BD006D18AB /* ChangePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76CD265E219D02BD006D18AB /* ChangePasswordViewController.xib */; };
+		76D62DE521A6945A009E2BC2 /* InfoBKUPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62DDF21A6945A009E2BC2 /* InfoBKUPresenter.swift */; };
+		76D62DE621A6945A009E2BC2 /* InfoBKURouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62DE021A6945A009E2BC2 /* InfoBKURouter.swift */; };
+		76D62DE721A6945A009E2BC2 /* InfoBKUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62DE121A6945A009E2BC2 /* InfoBKUViewController.swift */; };
+		76D62DE821A6945A009E2BC2 /* InfoBKUProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62DE221A6945A009E2BC2 /* InfoBKUProtocols.swift */; };
+		76D62DE921A6945A009E2BC2 /* InfoBKUInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62DE321A6945A009E2BC2 /* InfoBKUInteractor.swift */; };
+		76D62DEA21A6945A009E2BC2 /* InfoBKUViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D62DE421A6945A009E2BC2 /* InfoBKUViewController.xib */; };
+		76D62DEC21A69705009E2BC2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62DEB21A69705009E2BC2 /* BaseViewController.swift */; };
 		76FB2F5C219BBD1000F235B2 /* ProcessRadio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB2F5B219BBD1000F235B2 /* ProcessRadio.swift */; };
 		76FB2F5E219BBFA000F235B2 /* QuestionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB2F5D219BBFA000F235B2 /* QuestionText.swift */; };
 		76FB2F61219BC52800F235B2 /* CellTestQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB2F5F219BC52800F235B2 /* CellTestQuestion.swift */; };
@@ -231,6 +238,13 @@
 		76CD265C219D02BD006D18AB /* ChangePasswordProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordProtocols.swift; sourceTree = "<group>"; };
 		76CD265D219D02BD006D18AB /* ChangePasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordInteractor.swift; sourceTree = "<group>"; };
 		76CD265E219D02BD006D18AB /* ChangePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordViewController.xib; sourceTree = "<group>"; };
+		76D62DDF21A6945A009E2BC2 /* InfoBKUPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBKUPresenter.swift; sourceTree = "<group>"; };
+		76D62DE021A6945A009E2BC2 /* InfoBKURouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBKURouter.swift; sourceTree = "<group>"; };
+		76D62DE121A6945A009E2BC2 /* InfoBKUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBKUViewController.swift; sourceTree = "<group>"; };
+		76D62DE221A6945A009E2BC2 /* InfoBKUProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBKUProtocols.swift; sourceTree = "<group>"; };
+		76D62DE321A6945A009E2BC2 /* InfoBKUInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBKUInteractor.swift; sourceTree = "<group>"; };
+		76D62DE421A6945A009E2BC2 /* InfoBKUViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoBKUViewController.xib; sourceTree = "<group>"; };
+		76D62DEB21A69705009E2BC2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		76FB2F5B219BBD1000F235B2 /* ProcessRadio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessRadio.swift; sourceTree = "<group>"; };
 		76FB2F5D219BBFA000F235B2 /* QuestionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionText.swift; sourceTree = "<group>"; };
 		76FB2F5F219BC52800F235B2 /* CellTestQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTestQuestion.swift; sourceTree = "<group>"; };
@@ -264,6 +278,7 @@
 		760008B2219BF1F2004D9CE1 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				76D62DDE21A69445009E2BC2 /* InfoBKU */,
 				763A477D21A5624A000982D8 /* Cell */,
 				7673339921A4005B00F19190 /* ForgotPassword */,
 				7673338C21A39AFC00F19190 /* ConfirmPhoneNumber */,
@@ -531,6 +546,7 @@
 			children = (
 				76A140612192BCA200343521 /* CameraHandler.swift */,
 				763A477021A5265F000982D8 /* PhoneNumberEntryVC.swift */,
+				76D62DEB21A69705009E2BC2 /* BaseViewController.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -597,6 +613,19 @@
 				76CD265E219D02BD006D18AB /* ChangePasswordViewController.xib */,
 			);
 			path = ChangePassword;
+			sourceTree = "<group>";
+		};
+		76D62DDE21A69445009E2BC2 /* InfoBKU */ = {
+			isa = PBXGroup;
+			children = (
+				76D62DDF21A6945A009E2BC2 /* InfoBKUPresenter.swift */,
+				76D62DE021A6945A009E2BC2 /* InfoBKURouter.swift */,
+				76D62DE121A6945A009E2BC2 /* InfoBKUViewController.swift */,
+				76D62DE221A6945A009E2BC2 /* InfoBKUProtocols.swift */,
+				76D62DE321A6945A009E2BC2 /* InfoBKUInteractor.swift */,
+				76D62DE421A6945A009E2BC2 /* InfoBKUViewController.xib */,
+			);
+			path = InfoBKU;
 			sourceTree = "<group>";
 		};
 		E2058AFBFC8FD9EC87895791 /* Pods */ = {
@@ -678,6 +707,7 @@
 				7676DF00219D7AA800783DA3 /* MemberCTCTViewController.xib in Resources */,
 				76A140692192BCA200343521 /* LoginViewController.xib in Resources */,
 				767FEBD82192F5D6006A1D60 /* ProfileViewController.xib in Resources */,
+				76D62DEA21A6945A009E2BC2 /* InfoBKUViewController.xib in Resources */,
 				76A1403E2192BBF500343521 /* LaunchScreen.storyboard in Resources */,
 				76A140812192CBEF00343521 /* MainViewController.xib in Resources */,
 				767FEBC92192EF53006A1D60 /* CellHeader.xib in Resources */,
@@ -775,6 +805,7 @@
 				76A1407E2192CBEF00343521 /* MainViewController.swift in Sources */,
 				767FEBD72192F5D6006A1D60 /* ProfileInteractor.swift in Sources */,
 				76A1406F2192BCA200343521 /* ExtensionTextField.swift in Sources */,
+				76D62DE521A6945A009E2BC2 /* InfoBKUPresenter.swift in Sources */,
 				767FEBD42192F5D6006A1D60 /* ProfileRouter.swift in Sources */,
 				76BDBBD72194417400F4364F /* TestRouter.swift in Sources */,
 				76BDBBCC2194304000F4364F /* ViewIndicator.swift in Sources */,
@@ -806,6 +837,7 @@
 				76BDBBC921942E2F00F4364F /* PDFInteractor.swift in Sources */,
 				763A479021A56BC6000982D8 /* CellHeaderProfile.swift in Sources */,
 				76BDBBC821942E2F00F4364F /* PDFProtocols.swift in Sources */,
+				76D62DE921A6945A009E2BC2 /* InfoBKUInteractor.swift in Sources */,
 				767FEBD32192F5D6006A1D60 /* ProfilePresenter.swift in Sources */,
 				76BDBBE22194425800F4364F /* RatioCTCT.swift in Sources */,
 				76A140742192BCA200343521 /* CameraHandler.swift in Sources */,
@@ -836,6 +868,7 @@
 				76A140682192BCA200343521 /* LoginInteractor.swift in Sources */,
 				76BDBBD92194417400F4364F /* TestProtocols.swift in Sources */,
 				76A1407F2192CBEF00343521 /* MainProtocols.swift in Sources */,
+				76D62DE821A6945A009E2BC2 /* InfoBKUProtocols.swift in Sources */,
 				763A477C21A55F4D000982D8 /* Extension+UITableview.swift in Sources */,
 				76BDBBD62194417400F4364F /* TestPresenter.swift in Sources */,
 				76A1407C2192CBEF00343521 /* MainPresenter.swift in Sources */,
@@ -844,7 +877,10 @@
 				7676DEED219D5DDB00783DA3 /* ChangeSuccessedViewController.swift in Sources */,
 				7676DEFD219D7AA800783DA3 /* MemberCTCTViewController.swift in Sources */,
 				760008BA219BF205004D9CE1 /* SettingRouter.swift in Sources */,
+				76D62DE721A6945A009E2BC2 /* InfoBKUViewController.swift in Sources */,
 				76A140652192BCA200343521 /* RegisterInteractor.swift in Sources */,
+				76D62DE621A6945A009E2BC2 /* InfoBKURouter.swift in Sources */,
+				76D62DEC21A69705009E2BC2 /* BaseViewController.swift in Sources */,
 				767FEBC32192E093006A1D60 /* Menu.swift in Sources */,
 				76A140622192BCA200343521 /* RegisterPresenter.swift in Sources */,
 				76BDBBCE21943A9B00F4364F /* ExtensionUIColor.swift in Sources */,
@@ -998,8 +1034,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = APP_CTCT/APP_CTCT.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FJLX9MW3AX;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = APP_CTCT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1025,6 +1061,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "viper.APP-CTCT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1036,8 +1073,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = APP_CTCT/APP_CTCT.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FJLX9MW3AX;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = APP_CTCT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1063,6 +1100,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "viper.APP-CTCT";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

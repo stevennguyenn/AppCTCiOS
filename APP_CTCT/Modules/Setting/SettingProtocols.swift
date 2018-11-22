@@ -12,12 +12,15 @@ import Foundation
 
 //MARK: Wireframe -
 protocol SettingWireframeProtocol: class {
-
+    func openInfoBKU()
+    func openChangePassword()
 }
 //MARK: Presenter -
 protocol SettingPresenterProtocol: class {
 
     var interactor: SettingInteractorInputProtocol? { get set }
+    func openInfoBKU()
+    func openChangePassword()
 }
 
 //MARK: Interactor -

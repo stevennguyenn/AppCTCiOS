@@ -10,7 +10,7 @@
 
 import UIKit
 
-class ChangePasswordViewController: UIViewController {
+class ChangePasswordViewController: BaseViewController {
    
     @IBOutlet weak var btnChange: CustomButton!
     @IBOutlet weak var currentPass: ViewTextField!
@@ -22,6 +22,12 @@ class ChangePasswordViewController: UIViewController {
 	override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+    }
+    
+    override func setupNavigation() {
+        super.setupNavigation()
+        self.addBackNavigation()
+        self.setTitle(title: Strings.Navigation.changPassword)
     }
     
     func setupView(){

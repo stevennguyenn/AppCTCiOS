@@ -16,4 +16,6 @@ class Colors{
     static let colorAccent = #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)
     static let colorFacebook = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
     static let colorRed = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+    static let redColor = UIColor(red: 207/255, green: 15/255, blue: 37/255, alpha: 1)
+    static let background = UIColor(red: 249/255, green: 249/255, blue: 249/255, alpha: 1)
 }
