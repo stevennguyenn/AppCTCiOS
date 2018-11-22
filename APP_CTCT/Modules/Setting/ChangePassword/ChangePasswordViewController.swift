@@ -16,8 +16,8 @@ class ChangePasswordViewController: BaseViewController {
     @IBOutlet weak var currentPass: ViewTextField!
     @IBOutlet weak var newPass: ViewTextField!
     @IBOutlet weak var confirmPass: ViewTextField!
-    
-	var presenter: ChangePasswordPresenterProtocol?
+    @IBOutlet weak var viewShowPass: CustomSwitch!
+    var presenter: ChangePasswordPresenterProtocol?
 
 	override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +31,15 @@ class ChangePasswordViewController: BaseViewController {
     }
     
     func setupView(){
+        newPass.setViewPassword()
+        confirmPass.setViewPassword()
         currentPass.setDataView(textLabel: "Current Password", placeText: "Current Password")
         newPass.setDataView(textLabel: "New Password", placeText: "New Password")
         confirmPass.setDataView(textLabel: "Confirm Password", placeText: "Confirm Password")
         btnChange.setTextButton(tempText: "Change Password")
         btnChange.delegate = self
+        viewShowPass.setTitle(text: "Show Password")
+        viewShowPass.delegate = self
     }
 }
 extension ChangePasswordViewController: ProcessButton{
@@ -83,5 +87,16 @@ extension ChangePasswordViewController: ChangePasswordViewProtocol{
 extension ChangePasswordViewController: ProcessBackRootViewController{
     func backRoot() {
         presenter?.backRoot()
+    }
+}
+extension ChangePasswordViewController: changeSwitch{
+    func change(isOn: Bool) {
+        if (isOn){
+            newPass.showPass()
+            confirmPass.showPass()
+            return
+        }
+        newPass.setViewPassword()
+        confirmPass.setViewPassword()
     }
 }

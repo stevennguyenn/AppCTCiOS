@@ -120,6 +120,7 @@
 		76D62DE921A6945A009E2BC2 /* InfoBKUInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62DE321A6945A009E2BC2 /* InfoBKUInteractor.swift */; };
 		76D62DEA21A6945A009E2BC2 /* InfoBKUViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76D62DE421A6945A009E2BC2 /* InfoBKUViewController.xib */; };
 		76D62DEC21A69705009E2BC2 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62DEB21A69705009E2BC2 /* BaseViewController.swift */; };
+		76D62DEE21A6A3EF009E2BC2 /* CustomSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D62DED21A6A3EF009E2BC2 /* CustomSwitch.swift */; };
 		76FB2F5C219BBD1000F235B2 /* ProcessRadio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB2F5B219BBD1000F235B2 /* ProcessRadio.swift */; };
 		76FB2F5E219BBFA000F235B2 /* QuestionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB2F5D219BBFA000F235B2 /* QuestionText.swift */; };
 		76FB2F61219BC52800F235B2 /* CellTestQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FB2F5F219BC52800F235B2 /* CellTestQuestion.swift */; };
@@ -245,6 +246,7 @@
 		76D62DE321A6945A009E2BC2 /* InfoBKUInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoBKUInteractor.swift; sourceTree = "<group>"; };
 		76D62DE421A6945A009E2BC2 /* InfoBKUViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoBKUViewController.xib; sourceTree = "<group>"; };
 		76D62DEB21A69705009E2BC2 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		76D62DED21A6A3EF009E2BC2 /* CustomSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwitch.swift; sourceTree = "<group>"; };
 		76FB2F5B219BBD1000F235B2 /* ProcessRadio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessRadio.swift; sourceTree = "<group>"; };
 		76FB2F5D219BBFA000F235B2 /* QuestionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionText.swift; sourceTree = "<group>"; };
 		76FB2F5F219BC52800F235B2 /* CellTestQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTestQuestion.swift; sourceTree = "<group>"; };
@@ -519,6 +521,7 @@
 				76BDBBE12194425800F4364F /* RatioCTCT.swift */,
 				760008B0219BEEBE004D9CE1 /* ViewTextField.swift */,
 				767333A821A4151300F19190 /* ViewChoiceForgotPassword.swift */,
+				76D62DED21A6A3EF009E2BC2 /* CustomSwitch.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -826,6 +829,7 @@
 				76A1406B2192BCA200343521 /* LoginProtocols.swift in Sources */,
 				7676DEFB219D7AA800783DA3 /* MemberCTCTPresenter.swift in Sources */,
 				76A1406D2192BCA200343521 /* LoginRouter.swift in Sources */,
+				76D62DEE21A6A3EF009E2BC2 /* CustomSwitch.swift in Sources */,
 				7676DEFE219D7AA800783DA3 /* MemberCTCTProtocols.swift in Sources */,
 				7643E5FB2193D73D00487579 /* ExtensionImageView.swift in Sources */,
 				7673339721A39B2B00F19190 /* ConfirmPhoneNumberInteractor.swift in Sources */,

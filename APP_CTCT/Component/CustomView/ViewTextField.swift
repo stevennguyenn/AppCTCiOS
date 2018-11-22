@@ -92,6 +92,10 @@ class ViewTextField: UIView{
         textfield.isSecureTextEntry = true
     }
     
+    func showPass(){
+        textfield.isSecureTextEntry = false
+    }
+    
     func setErrorView(error: String){
         labelError.text = error
         labelError.isHidden = false
